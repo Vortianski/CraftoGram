@@ -1,0 +1,41 @@
+name: "💡 Feature Request"
+description: "Suggest a new feature or improvement for CraftoGram."
+title: "[FEATURE] "
+labels: ["enhancement"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a new feature! Please provide as much detail as possible to help us implement it.
+
+  - type: input
+    id: feature_title
+    attributes:
+      label: "Feature Title"
+      description: "Briefly describe the feature."
+      placeholder: "Add support for multiple Telegram chats"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Feature Description"
+      description: "Explain what this feature should do."
+      placeholder: "The mod should allow linking multiple Telegram chats for different servers."
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "Motivation / Use Case"
+      description: "Why is this feature useful or necessary?"
+      placeholder: "This would allow servers with multiple channels to organize messages more effectively."
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: "Additional Information"
+      description: "Anything else you want to add?"
+      placeholder: "Screenshots, diagrams, or references."
